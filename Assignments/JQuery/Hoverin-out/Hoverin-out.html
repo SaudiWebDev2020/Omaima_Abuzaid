@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+            Hover In / Out
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("img").hover(function(){
+                    $(this).attr('src',$(this).attr('src2'));
+                    }, function() {
+                        $(this).attr("src2", $(this).attr("src1"));
+                        });
+});
+        </script>
+
+    </header>
+    <body>
+        <img  src='ninja.jpg ' src1='ninja.jpg' src2='ninja1.png'  width='500px' height="500px">
+        <img  src='ninja.jpg'  src1='ninja.jpg'  src2='ninja1.png'  width='500px' height="500px">
+        <img  src='ninja.jpg ' src1='ninja.jpg'    src2='ninja1.png'  width='500px' height="500px">
+        <img  src='ninja.jpg' src1='ninja.jpg'    src2='ninja1.png'  width='500px' height="500px">
+    
+</html>

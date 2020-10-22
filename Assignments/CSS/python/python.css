@@ -1,0 +1,123 @@
+
+body{
+    font-family: sans-serif;
+    background-color: #2e5073;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width:300px;
+    height: 100px;
+}
+#search_bar {
+    margin: 0 20px;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+}
+#search_bar a {
+    color: #f9d454;
+    text-decoration: underline;
+}
+#search_g {
+    background-color: #444444;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.75);
+}
+
+#search_g button {
+    background: #2e5073;
+    color: white;
+    padding: 2px 5px;
+}
+#nav_bar {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    background: linear-gradient( 0deg, rgba(68, 117, 169, 1) 0%,rgba(84, 126, 169, 1) 50%,rgba(68, 117, 169, 1) 100%);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px -2px rgba(0, 0, 0, 0.75);
+    margin: 20px 40px;
+}
+#nav_bar a {
+    text-decoration: none;
+    color: white;
+}
+#side_bar{
+        white-space: nowrap;
+        line-height: 1.8rem;
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+        padding-left: 16px; 
+        text-decoration: underline;
+}
+.sec1{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: white;
+        margin: 20px 40px;
+}
+.sec1 p{
+    padding: 0 20px;
+}
+.y_color{
+    color: #f9d454;
+    font-style: italic;
+    line-height: 1.8rem;
+    font-family:sans-serif;
+    font-size: large;
+}
+.sec2 {
+   
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+#get{
+    border-top: 5px solid #7ea7d1;
+    margin: 10px;
+    padding: 0 20px;
+    width: 40vw;
+
+}
+#get ul {
+    color: #7ea7d1;
+    list-style: none;
+    padding: 0;
+    margin: 0;}
+
+#applications{
+
+    border-top: 5px solid #7ea7d1;
+    margin: 10px;
+    padding: 0 20px;
+    width: 40vw;
+}
+#applications ul{
+    color: #7ea7d1;
+    list-style: none;
+    padding: 0;
+    margin: 0;}
+
+footer {
+        color: #8db6de;
+        text-align: center;
+        min-height: 50px;
+        background: linear-gradient(180deg, #2e5073 0%, #4374a8 100%);}
+footer a {
+            display: inline;
+            color: #8db6de;
+            align-content: space-between;
+            text-decoration: none;
+            margin-top: 40px;
+            font-size: medium;
+}
