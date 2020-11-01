@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/checkboard.css') }}" >
+    </head>
+    <body>
+        {%for i in range (8)%} 
+    <div>
+        {%for j in range (8)%}
+        <div class='box{{(i+j)%2+1}}'></div>
+        {%endfor%}
+    </div>
+    {%endfor%}
+    </body>
+</html>

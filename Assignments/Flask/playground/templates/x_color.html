@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            .blue{
+                width:200px; height: 200px; border: 2px solid black;
+        margin: 50px;  display: inline-block; align-items: center; 
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1 style='color:blue; text-align: center;'>Welcome!!!</h1>
+        
+        {% for i in range (0, num_times)%}
+        <div class='blue' {% if some_color%} 
+        style="background-color: {{some_color}};"
+        {%endif%}>
+        </div>
+    
+    
+        {%endfor%}
+    </body>
+</html>
