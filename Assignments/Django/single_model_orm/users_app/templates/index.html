@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            C+R Users
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="row pt-5">
+        <h1 class="text-center w-100">All the Users</h1>
+        </div>
+        <br>
+        <table class="table" style="width:500px; border: 3px solid black;  margin-left:auto; 
+        margin-right:auto;">
+            <thead class="thead-light">
+            <tr style= 'border: 3px solid black'>
+                <th >ID</th>
+                <th>Name</th>
+                <th> Email</th>
+                <th> Age</th>
+            </tr>
+            </thead>
+            {% for user in users %}
+            <tbody >
+            <tr>
+                <th scope="row" >{{user.id}}</th>
+                <td>{{user.first_name}} {{user.last_name}}</td>
+                <td>{{user.email_address}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+        <hr style=  'border-top: 1px solid black; width:900px'>
+        <h1 class="text-center w-100">Add a User</h1>
+        <form action='new_user' method='POST' style=" display:block; float:right; margin-right: 300px;">
+            {% csrf_token %}
+            <div style= "vertical-align: top;">
+            <div id=first>
+            <label for="fname" style= margin:20px;>First name:</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="email" style= margin:20px;>Email:</label>
+            <input type="text" id="email" name="email">
+            </div>
+            <div is=sec>
+            <label for="lname" style= margin:20px;>Last name:</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="age" style= margin:20px;>Age:</label>
+            <input type="text" id="age" name="age">
+            
+            </div>
+            </div>
+            
+            <button style= 'display:block; float:right; margin-right: 300px;'> Add </button>
+            
+        </form>
+
+    </body>
+</html>
